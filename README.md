@@ -8,7 +8,7 @@ Run
 
 Run as a standalone container, directly exposing the uWSGI service to the network.
 
-    docker run -d -t -p 500:5000 --name artifacts-server milocasagrande/simple-storage
+    docker run -d -t -p 5000:5000 --name artifacts-server milocasagrande/simple-storage
 
 To override the configuration parameters, bind mount a file to `/mnt/simple-storage.cfg`.
 
