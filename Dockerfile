@@ -3,8 +3,9 @@ FROM debian:jessie
 MAINTAINER Milo Casagrande <milo.casagrande@linaro.org>
 LABEL Version="1.0" Description="Run a simple web app to list directory contents"
 
-RUN apt-get update -qq && apt-get install -qq -y \
+RUN apt-get clean && apt-get update -qq && apt-get install -qq -y \
     git \
+    openssh-client \
     python3 \
     python3-dev \
     python3-pip \
