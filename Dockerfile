@@ -12,7 +12,7 @@ RUN apt-get clean && apt-get update -qq && apt-get install -qq -y \
     virtualenv \
     build-essential
 
-RUN cd /srv ; git clone https://github.com/MiloCasagrande/simple-storage.git
+RUN cd /srv ; git clone https://github.com/MiloCasagrande/simple-storage.git -b new-homepage
 RUN mkdir -p /srv/storage-env
 
 ENV PYTHONUSERBASE /srv/storage-env
